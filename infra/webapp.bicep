@@ -19,7 +19,7 @@ resource appService 'Microsoft.Web/sites@2022-09-01' = {
   kind: 'app'
   location: location
   properties: {
-    serverFarmId: /subscriptions/<subId>/resourceGroups/rg-eshoponweb-primary/providers/Microsoft.Web/serverfarms/appserviceplan-devops-webapp-primary-61657763
+    serverFarmId: appServicePlan.id
     siteConfig: {
       linuxFxVersion: 'DOTNETCORE|8.0'
       appSettings: [
